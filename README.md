@@ -22,13 +22,23 @@ The repository includes:
 * testing
 * evaluasi
 
+## Preparasi data seperti berikut
+
+download repositories ini dan download yolov3 dan darknet dibawah
+Yolov3  =  
+darknet =  
+
+upload data diatas ke google colab seperti gambar berikut:
+
+![Pastikan peletakan data seperti berikut ](assets/6.png)
+
 
 # step to convert XML to Csv 
 
-## 1. Prepare dataset and make sure the path 
+## 1. Open xml_to_text.py untuk mnegkonversi
 * buka code xml_to_txt.py (just make sure the path right)
 file xml dan jpg diletakkan dalam satu folder dan di convert ke txt
-![Object Detection Sample(segera)](assets/2.png)
+c
 
 file xml sudah di convert ke txt 
 
