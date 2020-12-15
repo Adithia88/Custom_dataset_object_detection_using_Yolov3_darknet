@@ -1,103 +1,100 @@
 # Custom_dataset_object_detection_using_Yolov3_darknet
 
 
-## Saya disini menggunakan Google colab
+## im using google collab cause, easy to install enviroment
 
-kita akan mengimplemntasikan Yolov3 pada python 3 menggunakan darknet (framework). model ini akan menghasilkan bounding box dan mengklasifikasi 
+This is an implementation of Yolov3 on Python 3 using darknet. The model generates bounding boxes and classify each object in the image.
 
+![Put file like this](assets/result.PNG)
 
 The repository includes:
-* konversi XML to txt (yolo format)
-* mengatur data config (obj.names, obj.data, yolov3_custom.cfg,yolov3_detect_custom.cfg)
-* training codes menggunakan google colab
-* testing codes menggunakan google colab
-* Evaluation codes menggunakan google colab (mAP dan FPS)
+* convert xml to txt (yolo format)
+* Training Codes
+* Testing Video and Image Codes
+* Evaluation (AP)/(mAP)
 
+
+## Installation
+1. Clone this repository
+
+2. download Yolov3  : https://drive.google.com/drive/folders/1ceyk9dVenWVFhxqPYmdZVFInHWgaEqMz?usp=sharing
+   donwload darknet : https://drive.google.com/file/d/1tgKE-0w4weZB1cnB1s2SPfJqtieyuMV0/view?usp=sharing
+   
+ Then put it in google drive like this
+
+![Put file like this](assets/1st_page.png)
 
 
 # Getting Started
-* Bounding box setiap gambar dengan menggunakan LabelImg (jika belum mempunyai data)
-* convert XML to txt
-* training 
-* testing
-* evaluasi
+* convert XML to csv
+* open convert_XML_to_yolo.py
+* Training dataset
+* Testing dataset
+* Evaluation 
 
-## Preparasi data seperti berikut
+# step to convert XML to txt (yolo format) 
 
-download repositories ini dan download yolov3 dan darknet dibawah
+## 1. Prepare dataset and make sure the path 
+open code xml_to_yolo.py (just make sure the path right)
 
-Yolov3  =  
-darknet =  
+![How to convert](assets/convert.PNG)
 
-upload data diatas ke google colab seperti gambar berikut:
-
-![Pastikan peletakan data seperti berikut ](assets/6.png)
-
-
-# step to convert XML to Csv 
-
-## 1. Open xml_to_text.py untuk mnegkonversi
-* buka code xml_to_txt.py (just make sure the path right)
-![coding konversi xml to txt](assets/2.png)
-
-file xml dan jpg diletakkan dalam satu folder dan di convert ke txt
-![file yang akan convert](assets/4.png)
-
-file xml sudah di convert ke txt 
-
-![hasil convert](assets/1.png)
-
-
-* letakkan file txt dan jpg dalam satu folder yang sama, lalu jadikan file zip dengan nama obj
-![Object Detection Sample(segera)](assets/7.png)
-
-
-## 2. Persiapan Train
-
-* folder dalam yolov3 :
-![Object Detection Sample(segera)](assets/5.png)
-
-* ubah jumlah clases didalam obj.data sesuai dengan jumlah kelas yang digunakan
-
-![Object Detection Sample(segera)](assets/9.png)
-
-* ubah nama kelas sesuai dengan nama kelas yang digunakan
-
-![Object Detection Sample(segera)](assets/10.png)
-
-* ubah config dalam yolov3_custom.cfg
-
-
-
-
+the part u must change just class, in this case my class is kangaroo
 
 # Step to train  with your own data
 
-## 1. train own dataset
-Buka file YOLOv3.ipynb dengan menggunakan google colab
-![Object Detection Sample(segera)](assets/13.png)
+## 1. change some config file first 
+This example will explain which part u must change to train your own dataset
+
+* obj.data
+
+![How to change the config](assets/objdata.PNG) 
+
+just change the number of the class ( in this case i use 1 class)
+
+* obj.names
+
+![How to change the config](assets/objnames.PNG) 
+
+change the names of class ( in this case my classes are galbo,kitkat and snickers )
+
+* yolov3_custom.cfg
+
+![How to change the config](assets/yolov3_custom.PNG) 
+
+* search yolo ( u can click ctrl+f and search yolo)
+* change the names of classes as ur class (in my case 1)
+* change the filters = (classes+5)*3 = in my case (18) 
+* yolo has 3 part of filter and class so change it 3 times (IMPORTANT)
 
 
-tunggu proses training (maksimal google colab 12 jam)
-![proses train](assets/14.png)
+## 2. Train with own dataset
+
+* just open YOLOv3.ipynb and execute all codes (remmeber to use GPU)
+
+![Train Model](assets/Train_yolo_start.PNG)
+
+when the training start u can see like this just wait until done and model will be save in yolov4/backup
+
+# Step to test with your own data videos or images
+
+## 1. open YOLOv_detect_Video_and_images.ipynb 
+This example will explain which part u must change to test your own data
+
+* YOLOv_detect_Video_and_images.ipynb
+
+just make sure u upload your testing video and image to folder in google drive
+
+![Test Model](assets/Testing_video.PNG)
+
+![Test Model](assets/Testing_poto.PNG)
+
+the part u must change just the filename of data what u want to test and the u can see the result below
+
+![Test Model](assets/last.jpg)
 
 
-First we must register out dataset and define the label name
 
-![Register Dataset #1](assets/3.PNG)
-
-![Register Dataset #2](assets/4.PNG)
-
-then we the part u must change is config for train model
-
-![Train Model](assets/5.PNG)
-
-## 2. Execute all program 
-just run all part and get the result
-
-## 3. result like this
-
-![Result ](assets/6.PNG)
 
 
 
