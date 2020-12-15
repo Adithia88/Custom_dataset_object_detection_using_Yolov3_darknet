@@ -8,22 +8,19 @@ kita akan mengimplemntasikan Yolov3 pada python 3 menggunakan darknet (framework
 
 The repository includes:
 * konversi XML to txt (yolo format)
-* menatur data config (obj.names, obj.data, yolov3_custom.cfg,
+* mengatur data config (obj.names, obj.data, yolov3_custom.cfg,yolov3_detect_custom.cfg)
 * training codes menggunakan google colab
-* te
-* Evaluation on MS COCO metrics (AP) (Soon)
-* Example of training on your own dataset
-
+* testing codes menggunakan google colab
+* Evaluation codes menggunakan google colab (mAP dan FPS)
 
 
 
 # Getting Started
-* Bounding box setiap gambar dengan menggunakan LabelImg
-
-
+* Bounding box setiap gambar dengan menggunakan LabelImg (jika belum mempunyai data)
 * convert XML to txt
-
-
+* training 
+* testing
+* evaluasi
 
 
 # step to convert XML to Csv 
