@@ -5,40 +5,71 @@
 
 kita akan mengimplemntasikan Yolov3 pada python 3 menggunakan darknet (framework). model ini akan menghasilkan bounding box dan mengklasifikasi 
 
-![Object Detection Sample(segera)](assets/1.png)
 
 The repository includes:
 * konversi XML to txt (yolo format)
 * menatur data config (obj.names, obj.data, yolov3_custom.cfg,
 * training codes menggunakan google colab
-* 
+* te
 * Evaluation on MS COCO metrics (AP) (Soon)
 * Example of training on your own dataset
 
 
 
-## Installation
-1. Clone this repository
-
-![Put file like this](assets/2.PNG)
-
-2. download dataset here : https://drive.google.com/file/d/1USBWv96I3H5RfQ1lUYbwDgqgULJif3Ia/view?usp=sharing
 
 # Getting Started
-* convert XML to csv
-* open Detectron2_custom_object_detection.ipynb (this code include all  Training, Testing and evaluation soon)
+* Bounding box setiap gambar dengan menggunakan LabelImg
+
+
+* convert XML to txt
+
+
 
 
 # step to convert XML to Csv 
 
 ## 1. Prepare dataset and make sure the path 
-open code xml_to_csv.py (just make sure the path right)
+* buka code xml_to_txt.py (just make sure the path right)
+file xml dan jpg diletakkan dalam satu folder dan di convert ke txt
+![Object Detection Sample(segera)](assets/2.png)
+
+file xml sudah di convert ke txt 
+
+![Object Detection Sample(segera)](assets/1.png)
+
+
+* letakkan file txt dan jpg dalam satu folder yang sama, lalu jadikan file zip dengan nama obj
+![Object Detection Sample(segera)](assets/7.png)
+
+
+## 2. Persiapan Train
+* Upload semua file kedalam google drive
+![Object Detection Sample(segera)](assets/6.png)
+
+* folder dalam yolov3 :
+![Object Detection Sample(segera)](assets/5.png)
+
+* ubah jumlah clases didalam obj.data sesuai dengan jumlah kelas yang digunakan
+
+![Object Detection Sample(segera)](assets/9.png)
+
+* ubah nama kelas sesuai dengan nama kelas yang digunakan
+
+![Object Detection Sample(segera)](assets/10.png)
+
+* ubah config dalam yolov3_custom.cfg
+
+
+
 
 
 # Step to train  with your own data
 
 ## 1. train own dataset
-This example will explain which part u must change to train your own dataset. open Detectron2_custom_object_detection.ipynb 
+Buka file YOLOv3.ipynb dengan menggunakan google colab
+![Object Detection Sample(segera)](assets/13.png)
+
+
 
 First we must register out dataset and define the label name
 
