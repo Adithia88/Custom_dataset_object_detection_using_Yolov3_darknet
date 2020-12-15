@@ -78,6 +78,9 @@ Buka file YOLOv3.ipynb dengan menggunakan google colab
 ![Object Detection Sample(segera)](assets/13.png)
 
 
+tunggu proses training (maksimal google colab 12 jam)
+![proses train](assets/14.png)
+
 
 First we must register out dataset and define the label name
 
