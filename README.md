@@ -53,8 +53,6 @@ file xml sudah di convert ke txt
 
 
 ## 2. Persiapan Train
-* Upload semua file kedalam google drive
-![Object Detection Sample(segera)](assets/6.png)
 
 * folder dalam yolov3 :
 ![Object Detection Sample(segera)](assets/5.png)
