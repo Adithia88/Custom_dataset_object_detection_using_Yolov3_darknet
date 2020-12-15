@@ -25,6 +25,7 @@ The repository includes:
 ## Preparasi data seperti berikut
 
 download repositories ini dan download yolov3 dan darknet dibawah
+
 Yolov3  =  
 darknet =  
 
@@ -37,12 +38,14 @@ upload data diatas ke google colab seperti gambar berikut:
 
 ## 1. Open xml_to_text.py untuk mnegkonversi
 * buka code xml_to_txt.py (just make sure the path right)
+![coding konversi xml to txt](assets/2.png)
+
 file xml dan jpg diletakkan dalam satu folder dan di convert ke txt
-c
+![file yang akan convert](assets/4.png)
 
 file xml sudah di convert ke txt 
 
-![Object Detection Sample(segera)](assets/1.png)
+![hasil convert](assets/1.png)
 
 
 * letakkan file txt dan jpg dalam satu folder yang sama, lalu jadikan file zip dengan nama obj
