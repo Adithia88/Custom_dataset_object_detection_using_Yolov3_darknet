@@ -1,17 +1,17 @@
 # Custom_dataset_object_detection_using_Yolov3_darknet
 
-# Halal_Food_japan_Object_detection
 
-## im using google collab cause, easy to install enviroment
+## Saya disini menggunakan Google colab
 
-This is an implementation of Detectron2 on Python 3 using pytorch framework. The model generates bounding boxes and classify each object in the image.
+kita akan mengimplemntasikan Yolov3 pada python 3 menggunakan darknet (framework). model ini akan menghasilkan bounding box dan mengklasifikasi 
 
-![Object Detection Sample](assets/1.PNG)
+![Object Detection Sample(segera)](assets/1.png)
 
 The repository includes:
-* convert xml to CSV
-* Source code of Detectron2.
-* Jupyter notebooks to visualize the detection pipeline
+* konversi XML to txt (yolo format)
+* menatur data config (obj.names, obj.data, yolov3_custom.cfg,
+* training codes menggunakan google colab
+* 
 * Evaluation on MS COCO metrics (AP) (Soon)
 * Example of training on your own dataset
 
