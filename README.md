@@ -5,7 +5,8 @@
 
 This is an implementation of Yolov3 on Python 3 using darknet. The model generates bounding boxes and classify each object in the image.
 
-![Put file like this](assets/result.PNG)
+![Put file like this](assets/24.jpg)
+![Put file like this](assets/25.jpg)
 
 The repository includes:
 * convert xml to txt (yolo format)
@@ -91,7 +92,7 @@ just make sure u upload your testing video and image to folder in google drive
 
 the part u must change just the filename of data what u want to test and the u can see the result below
 
-![Test Model](assets/last.jpg)
+![Test Model](assets/25.jpg)
 
 
 
