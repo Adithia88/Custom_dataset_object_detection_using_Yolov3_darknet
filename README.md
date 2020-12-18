@@ -85,9 +85,9 @@ This example will explain which part u must change to test your own data
 
 just make sure u upload your testing video and image to folder in google drive
 
-![Test Model](assets/Testing_video.PNG)
+![Test Model](assets/22.jpg)
 
-![Test Model](assets/Testing_poto.PNG)
+![Test Model](assets/23.jpg)
 
 the part u must change just the filename of data what u want to test and the u can see the result below
 
