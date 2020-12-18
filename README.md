@@ -37,7 +37,7 @@ The repository includes:
 ## 1. Prepare dataset and make sure the path 
 open code xml_to_yolo.py (just make sure the path right)
 
-![How to convert](assets/convert.PNG)
+![How to convert](assets/19.PNG)
 
 the part u must change just class, in this case my class is kangaroo
 
