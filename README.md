@@ -37,7 +37,7 @@ The repository includes:
 ## 1. Prepare dataset and make sure the path 
 open code xml_to_yolo.py (just make sure the path right)
 
-![How to convert](assets/19.PNG)
+![How to convert](assets/19.png)
 
 the part u must change just class, in this case my class is kangaroo
 
@@ -48,19 +48,19 @@ This example will explain which part u must change to train your own dataset
 
 * obj.data
 
-![How to change the config](assets/objdata.PNG) 
+![How to change the config](assets/15.png) 
 
 just change the number of the class ( in this case i use 1 class)
 
 * obj.names
 
-![How to change the config](assets/objnames.PNG) 
+![How to change the config](assets/16.png) 
 
 change the names of class ( in this case my classes are galbo,kitkat and snickers )
 
 * yolov3_custom.cfg
 
-![How to change the config](assets/yolov3_custom.PNG) 
+![How to change the config](assets/18.png) 
 
 * search yolo ( u can click ctrl+f and search yolo)
 * change the names of classes as ur class (in my case 1)
@@ -72,7 +72,7 @@ change the names of class ( in this case my classes are galbo,kitkat and snicker
 
 * just open YOLOv3.ipynb and execute all codes (remmeber to use GPU)
 
-![Train Model](assets/Train_yolo_start.PNG)
+![Train Model](assets/20.png)
 
 when the training start u can see like this just wait until done and model will be save in yolov4/backup
 
