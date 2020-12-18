@@ -22,7 +22,7 @@ The repository includes:
    
  Then put it in google drive like this
 
-![Put file like this](assets/21.png)
+![Put file like this](assets/21.jpg)
 
 
 # Getting Started
