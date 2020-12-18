@@ -17,12 +17,12 @@ The repository includes:
 ## Installation
 1. Clone this repository
 
-2. download Yolov3  : https://drive.google.com/drive/folders/1ceyk9dVenWVFhxqPYmdZVFInHWgaEqMz?usp=sharing
-   donwload darknet : https://drive.google.com/file/d/1tgKE-0w4weZB1cnB1s2SPfJqtieyuMV0/view?usp=sharing
+2. download Yolov3  : https://drive.google.com/drive/folders/1hLxujr5BgvsipVxTO3eDfcZ-d-_i0ekW?usp=sharing
+   donwload darknet : https://drive.google.com/file/d/1lvurLP90g2IhXaBwcg0RRlCd7WGLX1P9/view?usp=sharing
    
  Then put it in google drive like this
 
-![Put file like this](assets/1st_page.png)
+![Put file like this](assets/21.png)
 
 
 # Getting Started
